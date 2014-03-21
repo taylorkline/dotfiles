@@ -116,5 +116,5 @@ TERM=xterm-256color
 
     export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 
-#path variable
-export PATH=$PATH:/home/rogermortis/Desktop/Android\ SDK/sdk/tools:/home/rogermortis/Desktop/Android\ SDK/sdk/platform-tools:~/bin
+#source the .bashrc.local with machine-specific commands
+[[ -f .bashrc.local ]] && . .bashrc.local
