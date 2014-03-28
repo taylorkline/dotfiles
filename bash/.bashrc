@@ -109,6 +109,12 @@ TERM=xterm-256color
 # mint-fortune, fortunes in your terminal
 #/usr/bin/mint-fortune
 
+# Raspberry Pi SSH alias
+# new tmux session
+alias sshpis='ssh -t pi@raspberrycraft.no-ip.org -p 4117 tmux'
+# resume tmux session
+alias sshpir='ssh -t pi@raspberrycraft.no-ip.org -p 4117 tmux attach'
+
 #Powerline shell
     function _update_ps1() {
        export PS1="$(~/powerline-shell/powerline-shell.py $? 2> /dev/null)"
