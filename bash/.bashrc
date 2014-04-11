@@ -111,11 +111,11 @@ TERM=xterm-256color
 
 # Raspberry Pi SSH alias
 # new tmux session
-alias sshpis='ssh -t pi@raspberrycraft.no-ip.org -p 4117 tmux'
+alias sshpis='ssh -t taylorpi@raspberrycraft.no-ip.org -p 4117 tmux'
 # resume tmux session
-alias sshpir='ssh -t pi@raspberrycraft.no-ip.org -p 4117 tmux attach'
+alias sshpir='ssh -t taylorpi@raspberrycraft.no-ip.org -p 4117 tmux attach'
 # mount RPI via sshfs
-alias mountrpi 'sshfs pi@raspberrycraft.no-ip.org:/ -p 4117 ~/rpi/ && cd ~/rpi/'
+alias mountrpi 'sshfs taylorpi@raspberrycraft.no-ip.org:/ -p 4117 ~/rpi/ && cd ~/rpi/'
 
 #Powerline shell
     function _update_ps1() {
