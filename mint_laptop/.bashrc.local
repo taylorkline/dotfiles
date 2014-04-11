@@ -1,0 +1,2 @@
+#path variable
+export PATH=$PATH:/home/rogermortis/Desktop/Android\ SDK/sdk/tools:/home/rogermortis/Desktop/Android\ SDK/sdk/platform-tools:~/bin
