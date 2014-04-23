@@ -14,7 +14,7 @@ colorscheme molokai
 " set background=dark
 
 " Editing a protected file as 'sudo'
-cmap W w !sudo tee % >/dev/null<CR>
+" cmap W w !sudo tee % >/dev/null<CR>
 
 " Commenting blocks of code: use ,cc or ,cu to comment/uncomment
 autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
