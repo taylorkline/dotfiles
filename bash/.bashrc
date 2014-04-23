@@ -115,7 +115,10 @@ alias sshpis='ssh -t taylorpi@raspberrycraft.no-ip.org -p 49232 tmux'
 # resume tmux session
 alias sshpir='ssh -t taylorpi@raspberrycraft.no-ip.org -p 49232 tmux attach'
 # mount RPI via sshfs
-alias mountrpi='sshfs taylorpi@raspberrycraft.no-ip.org:/ -p 49232 ~/rpi/ && cd ~/rpi/'
+alias mountrpi='sshfs taylorpi@raspberrycraft.no-ip.org:/home/taylorpi/ -p 49232 ~/rpi/ && cd ~/rpi/'
+alias mountrpilan='sshfs taylorpi@192.168.1.147:/home/taylorpi/ ~/rpi/ && cd ~/rpi/'
+
+alias rmjavatemp='rm ./*.class'
 
 #Powerline shell
     function _update_ps1() {
