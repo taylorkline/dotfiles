@@ -109,9 +109,6 @@ TERM=xterm-256color
 # mint-fortune, fortunes in your terminal
 #/usr/bin/mint-fortune
 
-#alias for ls command
-alias ls='ls -al'
-
 # Raspberry Pi SSH alias
 # new tmux session
 alias sshpis='ssh -t taylorpi@raspberrycraft.no-ip.org -p 49232 tmux'

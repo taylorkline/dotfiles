@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Getting Started with Leaflet</title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   </head>
+
+   <body>
+   <br><br>
+   <p1><a href="./maps/gpsmap.html">Click here for a GPS based map.</a></p1>
+   <br>
+   <p1><a href="./maps/popmap.html">Click here for a population density based map.</a></p1>
+   </body>
+
+</html>

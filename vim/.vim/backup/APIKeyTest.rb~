@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+consumer_key = nil
+consumer_secret = nil
+access_token = nil
+access_secret = nil
+File.open("./keys", "r")  do |file|
+   counter = 0
+   file.each_line  do |line|
+      if counter == 0
+         consumer_key = line
+      elsif counter == 1
+         consumer_secret = line
+      elsif counter == 2
+         access_token = line
+      else
+         access_secret = line
+      end
+      counter += 1
+   end
+end

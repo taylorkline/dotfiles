@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Location Based Leaflet Map</title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <link rel="stylesheet" href="./lflt/leaflet.css"/>
+      <link rel="stylesheet" type="text/css" href="./index.css"/>
+   </head>
+
+   <body>
+      <script src="./lflt/leaflet.js"></script>
+      <div id="map"></div>
+      <script src="./gpsleaflet.js"></script>
+   </body>
+
+</html>

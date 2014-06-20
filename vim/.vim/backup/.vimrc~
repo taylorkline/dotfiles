@@ -17,7 +17,7 @@ colorscheme molokai
 " cmap W w !sudo tee % >/dev/null<CR>
 
 " Unix line breaks
-set ff=unix
+set ff=macih
 
 " Commenting blocks of code: use ,cc or ,cu to comment/uncomment
 autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
