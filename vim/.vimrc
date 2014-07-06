@@ -13,8 +13,8 @@
 colorscheme molokai
 " set background=dark
 
-" Editing a protected file as 'sudo'
-" cmap W w !sudo tee % >/dev/null<CR>
+" Editing a protected file as sudo
+cmap w!! w !sudo tee % >/dev/null %
 
 " Unix line breaks
 set ff=unix
