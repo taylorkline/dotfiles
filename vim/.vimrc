@@ -14,6 +14,7 @@ syntax enable
 
 " solarized colorscheme
 set background=dark
+let g:solarized_contrast="high"
 let g:solarized_termcolors=256
 colorscheme solarized
 
