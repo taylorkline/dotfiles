@@ -1,2 +1,2 @@
-export PATH=/usr/local/bin:/usr/local/opt/ruby/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 source .bashrc

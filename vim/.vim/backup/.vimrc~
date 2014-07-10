@@ -10,14 +10,25 @@
 "	    for OpenVMS:  sys$login:.vimrc
 
 " set color scheme
-colorscheme molokai
-" set background=dark
+syntax enable
+
+" solarized colorscheme
+set background=dark
+let g:solarized_contrast="low"
+let g:solarized_termcolors=256
+colorscheme solarized
+
+" molokai colorscheme
+" first two settings are optional
+" let g:molokai_original = 1
+" let g:rehash256 = 1
+" colorscheme molokai
 
 " Editing a protected file as 'sudo'
 " cmap W w !sudo tee % >/dev/null<CR>
 
 " Unix line breaks
-set ff=macih
+set ff=unix
 
 " Commenting blocks of code: use ,cc or ,cu to comment/uncomment
 autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
@@ -43,9 +54,6 @@ nore , ;
 
 " This shows what you are typing as a command.
 set showcmd
-
-" highlight things found in search
-set hlsearch
 
 " Line Numbers PWN!
 set number
@@ -102,13 +110,6 @@ inoremap <C-U> <C-G>u<C-U>
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
-endif
-
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
 endif
 
 " Only do this part when compiled with support for autocommands.
