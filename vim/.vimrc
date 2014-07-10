@@ -11,10 +11,17 @@
 
 " set color scheme
 syntax enable
-colorscheme molokai
+
+" solarized colorscheme
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+
+" molokai colorscheme
+" first two settings are optional
 " let g:molokai_original = 1
 " let g:rehash256 = 1
-" set background=dark
+" colorscheme molokai
 
 " Editing a protected file as 'sudo'
 " cmap W w !sudo tee % >/dev/null<CR>
