@@ -24,8 +24,8 @@ colorscheme solarized
 " let g:rehash256 = 1
 " colorscheme molokai
 
-" Editing a protected file as 'sudo'
-" cmap W w !sudo tee % >/dev/null<CR>
+" Editing a protected file as sudo
+cmap w!! w !sudo tee % >/dev/null %
 
 " Unix line breaks
 set ff=unix
