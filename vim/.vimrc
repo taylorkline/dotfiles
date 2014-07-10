@@ -10,7 +10,10 @@
 "	    for OpenVMS:  sys$login:.vimrc
 
 " set color scheme
+syntax enable
 colorscheme molokai
+" let g:molokai_original = 1
+" let g:rehash256 = 1
 " set background=dark
 
 " Editing a protected file as 'sudo'
@@ -43,9 +46,6 @@ nore , ;
 
 " This shows what you are typing as a command.
 set showcmd
-
-" highlight things found in search
-set hlsearch
 
 " Line Numbers PWN!
 set number
@@ -102,13 +102,6 @@ inoremap <C-U> <C-G>u<C-U>
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
-endif
-
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
 endif
 
 " Only do this part when compiled with support for autocommands.
