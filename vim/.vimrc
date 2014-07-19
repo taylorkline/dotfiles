@@ -24,6 +24,10 @@ colorscheme solarized
 " let g:rehash256 = 1
 " colorscheme molokai
 
+" navigate by visual lines, rather than by linebreaks
+nmap <silent> j gj
+nmap <silent> k gk
+
 " Editing a protected file as sudo
 cmap w!! w !sudo tee % >/dev/null %
 
