@@ -13,16 +13,16 @@
 syntax enable
 
 " solarized colorscheme
-set background=dark
-let g:solarized_contrast="high"
-let g:solarized_termcolors=256
-colorscheme solarized
+" set background=dark
+" let g:solarized_contrast="high"
+" let g:solarized_termcolors=256
+" colorscheme solarized
 
 " molokai colorscheme
 " first two settings are optional
-" let g:molokai_original = 1
-" let g:rehash256 = 1
-" colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
+colorscheme molokai
 
 " navigate by visual lines, rather than by linebreaks
 nmap <silent> j gj
