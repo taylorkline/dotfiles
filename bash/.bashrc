@@ -124,7 +124,7 @@ alias mountrpilan='sshfs taylorpi@192.168.1.147:/home/taylorpi/ ~/rpi/ && cd ~/r
 alias rmjavatemp='rm ./*.class'
 
 # create a report.pdf from a report-markdown.txt using pandoc (For CS 314H)
-alias cspandoc="!pandoc --variable mainfont=Georgia --variable sansfont=Arial --variable monofont=\"Bitstream Vera Sans Mono\" --variable fontsize=12pt report-markdown.txt -o report.pdf"
+alias cspandoc="pandoc --variable mainfont=Georgia --variable sansfont=Arial --variable monofont=\"Bitstream Vera Sans Mono\" --variable fontsize=12pt report-markdown.txt -o report.pdf"
 
 #Powerline shell
     function _update_ps1() {
