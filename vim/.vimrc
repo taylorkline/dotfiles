@@ -31,6 +31,16 @@ nmap <silent> k gk
 " Editing a protected file as sudo
 cmap w!! w !sudo tee % >/dev/null %
 
+" save undo history
+set undofile
+set undodir=~/.vim/undo
+
+" folding
+set foldmethod=syntax
+set nofoldenable
+autocmd BufWinLeave *.* mkview!
+autocmd BufWinEnter *.* silent loadview
+
 " Unix line breaks
 set ff=unix
 
