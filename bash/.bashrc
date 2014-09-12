@@ -133,5 +133,8 @@ alias cspandoc="pandoc --variable mainfont=Georgia --variable sansfont=Arial --v
 
     export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 
+#Look for java libraries
+export CLASSPATH=$CLASSPATH:~/java_libs/*
+
 #source the .bashrc.local with machine-specific commands
 [[ -f .bashrc.local ]] && . .bashrc.local
