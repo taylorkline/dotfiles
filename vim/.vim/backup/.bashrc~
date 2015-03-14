@@ -109,6 +109,9 @@ TERM=xterm-256color
 # mint-fortune, fortunes in your terminal
 #/usr/bin/mint-fortune
 
+#alias for ls command
+alias ls='ls -al'
+
 # Raspberry Pi SSH alias
 # new tmux session
 alias sshpis='ssh -t taylorpi@raspberrycraft.no-ip.org -p 49232 tmux'
@@ -120,12 +123,17 @@ alias mountrpilan='sshfs taylorpi@192.168.1.147:/home/taylorpi/ ~/rpi/ && cd ~/r
 
 alias rmjavatemp='rm ./*.class'
 
-#Powerline shell
-    function _update_ps1() {
-       export PS1="$(~/powerline-shell/powerline-shell.py $? 2> /dev/null)"
-    }
+alias runprog3='javac -d bin -cp Critter.jar src/assignment/*.java && java -cp ./Critter.jar:bin/'
 
-    export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+# create a report.pdf from a report-markdown.txt using pandoc (For CS 314H)
+alias cspandoc="pandoc --variable mainfont=Georgia --variable sansfont=Arial --variable monofont=\"Bitstream Vera Sans Mono\" --variable fontsize=12pt report-markdown.txt -o report.pdf"
+
+#Look for java libraries
+export CLASSPATH=$CLASSPATH:~/java_libs/*
+
+#promptastic
+function _update_ps1() { export PS1="$(/home/zebra/promptastic/promptastic.py $?)"; }
+export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 
 #source the .bashrc.local with machine-specific commands
 [[ -f .bashrc.local ]] && . .bashrc.local

@@ -128,15 +128,12 @@ alias runprog3='javac -d bin -cp Critter.jar src/assignment/*.java && java -cp .
 # create a report.pdf from a report-markdown.txt using pandoc (For CS 314H)
 alias cspandoc="pandoc --variable mainfont=Georgia --variable sansfont=Arial --variable monofont=\"Bitstream Vera Sans Mono\" --variable fontsize=12pt report-markdown.txt -o report.pdf"
 
-#Powerline shell
-    function _update_ps1() {
-       export PS1="$(~/powerline-shell/powerline-shell.py $? 2> /dev/null)"
-    }
-
-    export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-
 #Look for java libraries
 export CLASSPATH=$CLASSPATH:~/java_libs/*
+
+#promptastic
+function _update_ps1() { export PS1="$(~/promptastic/promptastic.py $?)"; }
+export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 
 #source the .bashrc.local with machine-specific commands
 [[ -f .bashrc.local ]] && . .bashrc.local
