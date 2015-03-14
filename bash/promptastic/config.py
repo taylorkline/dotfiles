@@ -27,7 +27,7 @@ SEGMENTS = {
     'readonly': True,
 
     # A cross if the last command exited with a non-zero exit code.
-    'exitcode': True,
+    # 'exitcode': True,
 
     # Current git branch and status when the current directory is part of a git repo.
     'git': True,
