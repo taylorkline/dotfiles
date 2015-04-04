@@ -39,8 +39,8 @@ class Git(Segment):
             out, err = p.communicate()
 
             if 'not a git repo' in str(err).lower():
-                raise FileNotFoundError
-        except FileNotFoundError:
+                raise OSError
+        except (OSError, IOError):
             return None
 
         return out.decode().replace('refs/heads/', '').strip() if out else '(Detached)'
