@@ -1,3 +1,4 @@
 vim/.vim/backup/*
 vim/.vim/tmp/*
 .vimrc~
+__pycache__/
