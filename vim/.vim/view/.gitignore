@@ -1,0 +1,5 @@
+# vim undo history
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
