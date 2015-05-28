@@ -73,7 +73,7 @@ LS_COLORS="$LS_COLORS*.JPG=01;35:*.GIF=01;35:*.jpg=01;35:*.gif=01;35:*.jpeg=01;3
  
 export LS_OPTIONS='--color=auto'
    
-    alias ls='ls $LS_OPTIONS'
+    alias ls='ls -al $LS_OPTIONS'
     alias grep='grep $LS_OPTIONS'
     alias fgrep='fgrep $LS_OPTIONS'
     alias egrep='egrep $LS_OPTIONS'
@@ -106,12 +106,6 @@ fi
 #proper terminal colors
 TERM=xterm-256color
 
-# mint-fortune, fortunes in your terminal
-#/usr/bin/mint-fortune
-
-#alias for ls command
-alias ls='ls -al'
-
 # Raspberry Pi SSH alias
 # new tmux session
 alias sshpis='ssh -t taylorpi@raspberrycraft.no-ip.org -p 49232 tmux'
@@ -120,13 +114,6 @@ alias sshpir='ssh -t taylorpi@raspberrycraft.no-ip.org -p 49232 tmux attach'
 # mount RPI via sshfs
 alias mountrpi='sshfs taylorpi@raspberrycraft.no-ip.org:/home/taylorpi/ -p 49232 ~/rpi/ && cd ~/rpi/'
 alias mountrpilan='sshfs taylorpi@192.168.1.147:/home/taylorpi/ ~/rpi/ && cd ~/rpi/'
-
-alias rmjavatemp='rm ./*.class'
-
-alias runprog3='javac -d bin -cp Critter.jar src/assignment/*.java && java -cp ./Critter.jar:bin/'
-
-# create a report.pdf from a report-markdown.txt using pandoc (For CS 314H)
-alias cspandoc="pandoc --variable mainfont=Georgia --variable sansfont=Arial --variable monofont=\"Bitstream Vera Sans Mono\" --variable fontsize=12pt report-markdown.txt -o report.pdf"
 
 #Look for java libraries
 export CLASSPATH=$CLASSPATH:~/java_libs/*
