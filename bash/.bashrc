@@ -107,13 +107,13 @@ fi
 TERM=xterm-256color
 
 # Raspberry Pi SSH alias
-# new tmux session
-alias sshpis='ssh -t taylorpi@raspberrycraft.no-ip.org -p 49232 tmux'
+# start tmux session
+alias sshpis='ssh -t pi@raspberrycraft.no-ip.org -p 49232 tmux'
 # resume tmux session
-alias sshpir='ssh -t taylorpi@raspberrycraft.no-ip.org -p 49232 tmux attach'
+alias sshpir='ssh -t pi@raspberrycraft.no-ip.org -p 49232 tmux attach'
 # mount RPI via sshfs
-alias mountrpi='sshfs taylorpi@raspberrycraft.no-ip.org:/home/taylorpi/ -p 49232 ~/rpi/ && cd ~/rpi/'
-alias mountrpilan='sshfs taylorpi@192.168.1.147:/home/taylorpi/ ~/rpi/ && cd ~/rpi/'
+alias mountrpi='sshfs pi@raspberrycraft.no-ip.org:/ -p 49232 ~/rpi/ && cd ~/rpi/'
+alias mountrpilan='sshfs pi@192.168.1.125:/ ~/rpi/ && cd ~/rpi/'
 
 #Look for java libraries
 export CLASSPATH=$CLASSPATH:~/java_libs/*
