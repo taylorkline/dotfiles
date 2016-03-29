@@ -124,4 +124,5 @@ export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 
 #source the .bashrc.local with machine-specific commands
 #tests if file exists, then sources it with short-circuit evaluation
+#http://mywiki.wooledge.org/BashFAQ/031
 [[ -f ~/.bashrc.local ]] && . ~/.bashrc.local
