@@ -123,4 +123,5 @@ function _update_ps1() { export PS1="$(~/promptastic/promptastic.py $?)"; }
 export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 
 #source the .bashrc.local with machine-specific commands
-[[ -f .bashrc.local ]] && . .bashrc.local
+#tests if file exists, then sources it with short-circuit evaluation
+[[ -f ~/.bashrc.local ]] && . ~/.bashrc.local
