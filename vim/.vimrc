@@ -97,6 +97,9 @@ set shiftwidth=3
 set softtabstop=3
 set tabstop=3
 
+" Project-specific widths
+autocmd BufNewFile,BufRead */Signal-Android/* set shiftwidth=2 softtabstop=2 tabstop=2
+
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
