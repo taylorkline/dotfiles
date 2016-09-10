@@ -1,3 +1,0 @@
-https://sublime.wbond.net/docs/syncing
-
-http://misfoc.us/post/18018400006/syncing-sublime-text-2-settings-via-dropbox

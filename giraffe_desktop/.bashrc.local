@@ -1,0 +1,2 @@
+export PATH=$PATH:$HOME/Desktop/intellij/bin/:$HOME/Desktop/android/sdk/platform-tools/
+export USE_CCACHE=1
