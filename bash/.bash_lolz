@@ -1,0 +1,16 @@
+alias wtf='dmesg'
+alias rtfm='man'
+alias plz='sudo'
+
+alias tldr='less'
+alias alwayz='tail -f'
+
+alias icanhaz='mkdir'
+alias gimmeh='touch'
+alias byez='rm'
+alias dowant='cp'
+alias gtfo='mv'
+alias hai='cd'
+
+#TODO: Decide on a name for immediable poweroff or halt or shutdown
+alias kthxbai='halt'
