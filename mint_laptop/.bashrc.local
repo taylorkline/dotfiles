@@ -1,5 +1,0 @@
-#path variable
-export PATH=$PATH:/home/rogermortis/Desktop/AndroidStudio/sdk/tools:/home/rogermortis/Desktop/AndroidStudio/sdk/platform-tools:~/bin
-export USE_CCACHE=1
-export CCACHE_DIR=/media/development/.ccache/
-alias emulator='emulator -memory 2048 -partition-size 2014 -dns-server 8.8.8.8,8.8.4.4 -no-boot-anim -gpu on'

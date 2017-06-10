@@ -10,7 +10,5 @@
 	helper = cache --timeout=3600
 [color]
 	ui = auto
-[review "review.cyanogenmod.org"]
-	username = MaxRabbit
 [push]
 	default = simple

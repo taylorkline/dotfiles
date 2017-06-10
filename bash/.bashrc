@@ -7,6 +7,9 @@ alias copy='xclip -selection c'
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# lolbash
+[ -f ~/.bash_lolz ] && ~/.bash_lolz
+
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
@@ -67,7 +70,10 @@ xterm*|rxvt*)
     ;;
 esac
 
+alias ls='ls -al'
+
 # enable color support of ls and also add handy aliases
+# TODO: Test this to see if it even does anything
 if [ -x /usr/bin/dircolors ]; then
 # test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
  eval `dircolors`
