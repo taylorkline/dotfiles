@@ -137,3 +137,8 @@ export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 
 # set PATH so it includes user's private bin if it exists
 [[ -d "$HOME/bin" ]] && PATH="$HOME/bin:$PATH"
+
+# debian info
+DEBEMAIL="taylor.kline@utexas.edu"
+DEBFULLNAME="Taylor Kline"
+export DEBEMAIL DEBFULLNAME
