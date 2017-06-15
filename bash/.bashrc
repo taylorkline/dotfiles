@@ -8,7 +8,7 @@ alias copy='xclip -selection c'
 [ -z "$PS1" ] && return
 
 # lolbash
-[ -f ~/.bash_lolz ] && ~/.bash_lolz
+[ -f ~/.bash_lolz ] && . ~/.bash_lolz
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
