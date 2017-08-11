@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"DocBlockr",
+		"Gitignored File Excluder",
+		"ImportJS",
+		"JsPrettier",
+		"Material Theme",
+		"Oceanic Next Color Scheme",
+		"Package Control",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"SideBarTools",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-contrib-eslint",
+		"Todo",
+		"Whitespace"
+	]
+}
