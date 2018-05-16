@@ -14,3 +14,7 @@
 	default = simple
 [pull]
 	rebase = true
+[alias]
+   # Prune branches that have been merged into the respective branch
+   prune-master = !git branch --merged master | grep -v master | xargs git branch -d
+   prune-develop = !git branch --merged develop | grep -v develop | xargs git branch -d
