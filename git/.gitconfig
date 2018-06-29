@@ -4,6 +4,7 @@
 [core]
 	autocrlf = false 
 	safecrlf = true
+	excludesfile = ~/.gitignore-global
 [alias]
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [credential]
