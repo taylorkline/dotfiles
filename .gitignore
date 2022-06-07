@@ -3,4 +3,5 @@ vim/.vim/tmp/*
 .vimrc~
 __pycache__/
 bash/.fonts/*
+bash/.config
 .netrwhist
